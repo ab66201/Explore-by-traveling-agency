@@ -62,7 +62,37 @@ nav a {
     display: flex;
     flex: end;
     background-color: #002244;
-    width: 100%;
+    width: 95%;
     margin-top: 5%;
     margin-bottom: 50%;
+    height: 30%;
+    padding-right: 15%;
+
+}
+.ikonat{
+    width: 700px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10%;
+    margin-left: 15%;
+
+    
+  
+}
+.ikona1{
+    flex-direction: column;
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+
+.ikona1:hover {
+    transform: scale(1.2);
+    background-color:#E8E8E8;
 }
