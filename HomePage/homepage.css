@@ -4,8 +4,8 @@ body {
 }
 
 header {
-    background-color: royalblue;
-    color:#fff;
+    background-color: white;
+    color:black;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -34,12 +34,12 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 .loginreg a {
     margin-left: 20px;
-    color: #fff;
+    color: black;
 }
 
 .hero{
