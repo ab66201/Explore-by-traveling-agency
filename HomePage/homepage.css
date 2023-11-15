@@ -1,0 +1,43 @@
+body {
+    margin:0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: royalblue;
+    color:#fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust the size of your logo */
+    height: 50px; /* Adjust the size of your logo */
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.loginreg a {
+    margin-left: 20px;
+    color: #fff;
+}
