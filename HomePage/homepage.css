@@ -53,7 +53,7 @@ nav a {
 .foto {
     flex: 1;
     min-width: 300px;
-    background-image: url('"C:\Users\RS COMPUTERS\Downloads\OIP.jpg"'); /* Replace 'your-photo.jpg' with the actual path to your photo */
+    background-image: url('"C:\Users\RS COMPUTERS\Downloads\OIP.jpg"'); 
     background-size: cover;
     background-position: center;
     height: 300px; 
