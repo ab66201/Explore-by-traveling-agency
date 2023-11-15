@@ -63,11 +63,14 @@ nav a {
     flex: end;
     background-color: #002244;
     width: 95%;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 50%;
     height: 30%;
     padding-right: 15%;
 
+}
+.tekst{
+    width: 40%;
 }
 .ikonat{
     width: 700px;
@@ -95,4 +98,22 @@ nav a {
 .ikona1:hover {
     transform: scale(1.2);
     background-color:#E8E8E8;
+}
+.img{
+    justify-content: center;
+}
+.tekst h1{
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30%;
+    margin-left: 20%;
+    color: white;
+}
+.tekst p{
+
+    margin-top: 10%;
+    margin-left:20% ;
+    color: white;
+    text-align: start;
+    font-family: 'Courier New', Courier, monospace;
 }
