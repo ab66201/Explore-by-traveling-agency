@@ -42,31 +42,19 @@ nav a {
     color: #fff;
 }
 
-.f {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.foto {
-    flex: 1;
-    min-width: 300px;
-    background-image: url('"C:\Users\RS COMPUTERS\Downloads\OIP.jpg"'); 
+.hero{
+    background-color: #074f57;
+    background-image: url("OIP.jpg");
     background-size: cover;
-    background-position: center;
-    height: 300px; 
-    margin-right: 20px;
+    color: rgb(20, 21, 21);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.paragrafi {
-    flex: 1;
-    min-width: 300px;
-}
-
-.paragrafi p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
