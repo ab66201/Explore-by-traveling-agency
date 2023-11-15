@@ -41,3 +41,32 @@ nav a {
     margin-left: 20px;
     color: #fff;
 }
+
+.f {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.foto {
+    flex: 1;
+    min-width: 300px;
+    background-image: url('"C:\Users\RS COMPUTERS\Downloads\OIP.jpg"'); /* Replace 'your-photo.jpg' with the actual path to your photo */
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    margin-right: 20px;
+}
+
+.paragrafi {
+    flex: 1;
+    min-width: 300px;
+}
+
+.paragrafi p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
