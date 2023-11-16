@@ -42,6 +42,7 @@ nav a {
     color: black;
 }
 
+
 .hero{
     background-color: #074f57;
     background-image: url("OIP.jpg");
@@ -63,7 +64,7 @@ nav a {
     display: flex;
     flex: end;
     margin-top: 1%;
-    margin-bottom: 50%;
+    margin-bottom: 0%;
     padding-right: 15%;
     width: 95%;
     height: 30%;
@@ -98,31 +99,53 @@ nav a {
 }
 .destinacionet{
     background-color: blue;
+    padding-top: 0px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .destinacioni{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 50px;
+    color: lightseagreen;
+}
+.destinacioni h3{
+    text-align: center;
+    color: red;
 }
 .vendet{
+    flex: 1;
+    margin: 0 5px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 250px;
     height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .img2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     border-radius: 10px;
     height: 75%;
-    background-image: url("img-01.jpg");
-    background-size: 100% 100%;
     visibility: visible;
+    flex-direction: column;
     animation-delay: 0.1s;
-    animation-name: zoomIn;
 }
 {
     margin-top: 10%;
