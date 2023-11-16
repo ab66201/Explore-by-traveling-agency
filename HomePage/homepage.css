@@ -52,6 +52,7 @@ nav a {
 }
 
 .container{
+    width: 34%;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -98,3 +99,50 @@ nav a {
 }
 
 
+<<<<<<< HEAD
+=======
+    margin-top: 10%;
+    margin-left:20% ;
+    color: white;
+    text-align: start;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.whyuscontent {
+    text-align: center;
+    /* nuk u kon */ height: 300px;
+}
+
+.whyus {
+    margin-bottom: 50px;
+} 
+
+.whyus h2 {
+    margin-bottom: 10px;
+}
+
+.iconscontent {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    
+    margin-top: 20px;
+}
+
+.icon {
+    flex-basis: 30%;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon h4 {
+    margin-top: 10px;
+}
+
+
+>>>>>>> 3ff3ac04100e8ef260e7a53a63a83b9911c926fb
