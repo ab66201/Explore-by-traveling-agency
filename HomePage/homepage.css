@@ -121,11 +121,12 @@ nav a {
 
 .whyuscontent {
     text-align: center;
+    /* nuk u kon */ height: 300px;
 }
 
 .whyus {
-    margin-bottom: 10px;
-}
+    margin-bottom: 50px;
+} 
 
 .whyus h2 {
     margin-bottom: 10px;
@@ -134,6 +135,8 @@ nav a {
 .iconscontent {
     display: flex;
     justify-content: space-around;
+    justify-content: center;
+    
     margin-top: 20px;
 }
 
@@ -141,7 +144,7 @@ nav a {
     flex-basis: 30%;
 }
 
-icon img {
+.icon img {
     width: 50px;
     height: 50px;
     display: block;
