@@ -45,7 +45,7 @@ nav a {
 
 .hero{
     background-color: #074f57;
-    background-image: url("OIP.jpg"); 
+    background-image: url("OIP.jpg");
     background-size: cover;
     color: rgb(20, 21, 21);
     padding-top: 200px;
@@ -149,22 +149,22 @@ nav a {
     flex-direction: column;
     animation-delay: 0.1s;
 }
-<<<<<<< HEAD
-{
+
+/*.{
     margin-top: 10%
-=======
+
 .{
     margin-top: 10%;
->>>>>>> c9217d90f90dd26e69e6d822cc4a93a44317f3e2
+
     margin-left:20% ;
     color: white;
     text-align: start;
     font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 .whyuscontent {
     text-align: center;
-    /* nuk u kon */ height: 300px;
+    height: 300px;
 }
 
 .whyus {
@@ -198,8 +198,19 @@ nav a {
     margin-top: 10px;
 }
 
-<<<<<<< HEAD
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    width: 300px;
+    
+}
 
 
-=======
->>>>>>> c9217d90f90dd26e69e6d822cc4a93a44317f3e2
+
+
