@@ -119,45 +119,48 @@ nav a {
 .img{
     justify-content: center;
 }
-.destinacionet{
-    background-color: blue;
-    padding-top: 0px;
-    width: 100%;
+.section.heading{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
 }
-.destinacioni{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 85%;
-    height: 50px;
-    color: lightseagreen;
-}
-.destinacioni h3{
+section .heading .title{
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: blue;
     text-align: center;
-    color: red;
+    letter-spacing: 4px;
 }
-.vendet{
-    flex: 1;
-    margin: 0 5px;
+.popular{
+    margin-top: 10rem;
+    background-color: #fafafa;
+}
+.popular .container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 250px;
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 2rem;
+    padding:2rem ;
 }
+.popular .items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minamx(100px,1fr));
+    gap: 0.3rem;
+    overflow: hidden;
+   
+}
+.popular .items .photos{
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+
 .img2{
     display: flex;
     justify-content: space-evenly;
