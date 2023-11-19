@@ -65,79 +65,27 @@ nav a {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-/*.Mundesite{
-    display: flex;
-    margin-top: 1%;
-    padding-right: 10%;
-    width: 90%;
-    height: 30%;
-    background-color: aqua;
+.category{
+    margin-top: 2%;
+    background-color: #f5fefd;
 }
-.tekst{
-    width: 40%;
-}
-.titulli{
-    margin-top: 10px;
-    margin-left: 39%;
-    color: white;
-
-}
-.titulli h1{
-    margin-left: 30%;
-    text-align: center;
-    margin-bottom: 90%;
-    margin-top: 10%;
-    padding-top: 10%;
-}
-.titulli h2{
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content: center;
-}
-.ikonat{
-    display: flex;
-    background-color: red;
-    
-  
-    margin-left: 20%;
-    width: 700px;
-    justify-content: space-evenly;
-    padding: 10%;
-}
-.ikona1{
-    flex-direction: column;
-    margin-top: 20%;
-    justify-content: space-evenly;
-    
-    width: 30%;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-.ikona1:hover{
-    transform: scale(1.2);
-    background-color: aliceblue;
-}
-.img{
-    justify-content: center;
-}*/
-
 .center-text{
     text-align: center;
 }
 .center-text h4{
-    font-size: 18px;
+    font-size: 20px;
     color:#5E6282;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 40px;
 }
 .center-text h2{
     font-size: 50px;
     color: #14183e;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Volkhov';
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 .cate-pro{
     display: grid;
@@ -148,6 +96,9 @@ nav a {
 .row{
     padding: 60px 40px;
     background-color: #fff;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
     box-shadow: rgba(0,0,0,0.1) -4px 9px 25px -6px;
     transition: all .42s;
 } 
@@ -166,6 +117,9 @@ nav a {
     color: #5E6282 ;
     font-size: 14px;
     font-weight: 500;
+}
+.row:hover{
+    transform: translateY(-8px);
 }
 .section.heading{
     display: flex;
