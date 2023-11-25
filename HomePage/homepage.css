@@ -47,24 +47,40 @@ nav a {
     color: black;
 }
 
-
-.hero{
-    background-color: #074f57;
-    background-image: url("OIP.jpg");
+.intro {
+    background-image:url('travel_HD.jpg');
     background-size: cover;
-    color: rgb(20, 21, 21);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+    color: black;
 }
 
-.container{
-    width: 34%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.con {
+    display: flex;
+    justify-content: center;
 }
+
+.content{
+    display: flex;
+    align-items: center;
+    max-width: 8800px;
+}
+
+.text {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-left: 6px solid #6683ec;
+}
+
+.text p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+
 .category{
     margin-top: 2%;
     background-color: #f5fefd;
