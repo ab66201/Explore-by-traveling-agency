@@ -273,7 +273,7 @@
 
         function autoSliding(){
             deletInterval = setInterval(timer,1000);
-            funtion timer(){
+            function timer(){
                 slideNext();
                 indicators();
             }
@@ -301,7 +301,7 @@
                 counter = imageId;
                 slideImages[counter].style.animation = 'next2  0.5s ease-in forwards';
             }
-            else id(imageId == counter){
+            else if(imageId == counter){
                 return;
             }
             else{
