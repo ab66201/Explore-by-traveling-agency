@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial;
+    
 }
 
 nav{
@@ -266,7 +267,7 @@ span.next:hover, span.prev:hover{
     left: 50%;
     transform: translateX(-50%);
 }
-.dotsContainer .dot{
+.dotsContainer .dot{  
     width: 15px;
     height: 15px;
     margin: 0px 2px;
