@@ -52,7 +52,7 @@ nav ul li a:hover{
 .s{
     width: 100%;
     height: 100vh;
-    background: url(travel_HD.jpg);
+    background: url(travel_HD\ -\ Shortcut.lnk);
     background-size: cover;
     background-position: center;
 }
@@ -67,4 +67,8 @@ nav ul li a:hover{
     border-radius: .5rem;
     padding: .2rem 1rem;
    
+}
+.heading span.space{
+    background: none;
+
 }
