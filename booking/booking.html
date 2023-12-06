@@ -36,6 +36,7 @@
         <span>w</span>
     </h1>
     <form method="POST" action="?">
+        <font face =cambria color=white>
         <fieldset>
             <legend>Reservation</legend>
             <br>
@@ -44,9 +45,8 @@
                 <label for=fl> Flying From</label>
                 <span style="padding-left: 193px;">
                     <label for="flying"> Flying To</label>
-                
                 </tr>
-                <table>
+            </table>
                     <input id=fl name= aditya size=34 Placeholder = "City or Airport" type=text>
                     <input align=right id=flying size =34 Placeholder="City or Airport" type=text>
                     <br><br>
@@ -64,14 +64,25 @@
                                 <input id=way type=radio name=way> Round Trip
                                 <input id =way type=radio name=way> One Way
                                 <input id =way  type=radio name =way> Multi City </font>
-
                             </label>
                             <br><br>
-                </table>
-            </table>
+                    <label for="adults">Adults</label>
+                        <input id=adults type="number" min=0 max=20>
+                    <label for="Children">Children</label>
+                            <input id=Children type="number" min=0 max=20>
+                            <br><br>
+                    <label for="travel">Travel Class</label><font color=orange>
+                        <select id="travel">
+                            <option value="">First Class</option>
+                            <option> Business Class</option>
+                            <option >Economy Class</option>
+                        </select></font>
+                        <br><br>
+                        <button size=50><b>Show Flights</b></button>
+                
         </fieldset>
 
-    </form>
+    </form></font>
 
 </section>
 
