@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <div>
+        <form id=""></form>
+        <label for="Name">Name:</label>
+        <input type="text" id="name" name="name" reuqired>
+
+        <label for="Password">Password</label>
+        <input type="text" id="P">
+
+
+    </div>
+    
+    <script>
+        function validateForm(){
+            var name=document.getElementById('name').value;
+            var email=document.getElementById('email').value;
+            var password=document.getElementById('password').value;
+        
+        }
+
+        var nameRegex=/^[a-zA-Z\s]+$/;
+        if(!nameRegex.test(name)){
+            alert('Please enter a valid name.');
+            return false;
+        }
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!emailRegex.test(email)){
+            alert('Please enter a valid email adress.');
+            return false;
+        }
+        var passwordRegex=/^[^A-Z]+[^1-9]+$/;
+        if(!passwordRegex.test(password)){
+            alert('Please enter a password');
+            return false;
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

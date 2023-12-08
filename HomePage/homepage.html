@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@
                                 <div class="content">
                                     <div class="content-flex">
                                        <h4 class="id">$59.00</h4>
-                                       <h4>ZURICH - PRISHTINA</h4>
+                                       <h4>PRISHTINA - ZURICH</h4>
                                     </div>
                                     <p>OW/Person</p>
                                 </div>
@@ -80,10 +80,10 @@
                                 </div>
                                 <div class="content">
                                         <div class="content-flex">
-                                                <h4 class="id">a601</h4>
-                                                <h4>1234</h4>
+                                                <h4 class="id">$80.00</h4>
+                                                <h4>PRISHTINA - BASEL</h4>
                                         </div>
-                                        <p>Basel</p>
+                                        <p>OW/Person</p>
                                 </div>
                             </div> 
                             <div class="photos">
@@ -92,10 +92,10 @@
                                 </div>
                                 <div class="content">
                                         <div class="content-flex">
-                                                <h4 class="id">a601</h4>
-                                                <h4>1234</h4>
+                                                <h4 class="id">$95.00</h4>
+                                                <h4>PRISHTINA - TURKEY</h4>
                                         </div>
-                                        <p>Turkey</p>
+                                        <p>OW/Person</p>
                                 </div>
                             </div>
                             <div class="photos">
@@ -104,10 +104,10 @@
                                 </div>
                                 <div class="content">
                                         <div class="content-flex">
-                                                <h4 class="id">a601</h4>
-                                                <h4>1234</h4>
+                                                <h4 class="id">$70.00</h4>
+                                                <h4> PRISHTINA - HELSINK</h4>
                                         </div>
-                                        <p>Helsink</p>
+                                        <p>OW/Person</p>
                                 </div>
                             </div>
                             <div class="photos">
@@ -116,10 +116,10 @@
                                 </div>
                                 <div class="content">
                                         <div class="content-flex">
-                                                <h4 class="id">a601</h4>
-                                                <h4>1234</h4>
+                                                <h4 class="id">$60.00</h4>
+                                                <h4>PRISHTINA - MUNICH</h4>
                                         </div>
-                                        <p>Munich</p>
+                                        <p>OW/Person</p>
                                 </div>
                             </div>
                             <div class="photos">
@@ -128,17 +128,17 @@
                                 </div>
                                 <div class="content">
                                         <div class="content-flex">
-                                                <h4 class="id">a601</h4>
-                                                <h4>1234</h4>
+                                                <h4 class="id">$87.00</h4>
+                                                <h4>PRISHTINA - STUTGART</h4>
                                         </div>
-                                        <p>Stutgart</p>
+                                        <p>OW/Person</p>
                                 </div>
                             </div>
                         
                     </div>
                 </div>
         </section>
-        <section class="slider">
+    <section class="slider">
 
         <div class="slide-container">
             <div class="slides">
@@ -150,8 +150,8 @@
             </div>
 
             <div class="buttons">
-                <span class="next">&#10095</span>
-                <span class="prev">&#10094</span>
+                <span class="next" onclick="slideNext()">&#10095</span>
+                <span class="prev" onclick="slidePrev()">&#10094</span>
             </div>
 
             <div class="dotsContainer">
@@ -191,7 +191,43 @@
         </div>
     </div>  
     </main>   
+
+
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testfooter.css">
+    <title>Document</title>
+</head>
+<body>
+    <footer>
+        <div class="footer-content">
+           <div class="footer-section">
+             <h2>Contact</h2>
+             <ul>
+               <li><a href="#"><img src="icons8-location-94.png" alt="Location" width="20" height="20"> Kosove, Prishtine</a></li>
+               <li><a href="#"><img src="icons8-phone-94.png" alt="Location" width="20" height="20"> +38349849223</a></li>
+               <li><a href="#"><img src="icons8-gmail-94.png" alt="Location" width="20" height="20"> expbytravelling@gmail.com</a></li>
+             </ul>
+           </div>
+           <div class="footer-section">
+             <h2>Follow Us</h2>
+             <ul>
+               <li><a href="#"><img src="60060-blue-symbol-square-facebook-social-free-download-png-hd.png" alt="Facebook" width="20" height="20"> Facebook</a></li>
+               <li><a href="#"><img src="R.png" alt="Twitter" width="20" height="20"> Twitter</a></li>
+               <li><a href="#"><img src="R (1).png" alt="Instagram" width="20" height="20"> Instagram</a></li>
+             </ul>
+           </div>
+        </div>
+        <div class="footer-bottom">
+           <p>&copy; 2022 Travel Agency. All rights reserved.</p>
+        </div>
+       </footer>
+</body>
+</html>
     
+    <!--
     <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -210,6 +246,7 @@
             <p class="footer-company-name">Copyright © 2023<strong>Explore By Travelling</strong> All rights reserved</p>
         </div>
 
+        
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
@@ -239,7 +276,7 @@
             </div>
         </div>
     </footer>
-
+    -->
 
     <script type="text/javascript">
         let slideImages = document.querySelectorAll('img');
@@ -247,7 +284,13 @@
         let prev = document.querySelector('.prev');
         let dots = document.querySelectorAll('.dot');
 
+<<<<<<< HEAD
         var counter =0;icons8-facebook-94
+=======
+        var counter =0;
+        let deleteInterval;
+
+>>>>>>> 636e81ba4c09be00d71cd818824de37ee3f8c3b8
         next.addEventListener('click', slideNext);
         function slideNext(){
         slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
@@ -290,14 +333,18 @@
 
         container.addEventListener('mouseout',autoSliding);
 
+        
         function indicators(){
-            for(i=0;i<dots.length; i++){
+           for(i=0;i<dots.length; i++){
                 dots[i].className = dots[i].className.replace(' active' , '');
             }
             dots[counter].className+= 'active';
         }
+        
+
         function switchImage(currentImage){
             currentImage.classList.add('active');
+           
             var imageId = currentImage.getAttribute('attr');
             if(imageId>counter){
                 slideImages[counter].style.animation = 'next1  0.5s ease-in forwards';
