@@ -5,7 +5,9 @@ body{
     overflow: hidden;
     background-size: cover;
 }
-.container{
+
+
+/*.container{
     width: 380px;
     margin: 7% auto;
     border-radius: 25px;
@@ -61,4 +63,4 @@ body{
     position: absolute;
     left: 15px;
 
-}
+}*/
