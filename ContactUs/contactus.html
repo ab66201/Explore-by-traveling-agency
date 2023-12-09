@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Footer</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">ExploreByTravelling</div>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Booking</a></li>
+            <li> <a href="#">Contact Us</a></li>
+            <li> <a href="#"><strong>Log In</strong></a></li>
+            <li> <a href="#"><strong>Register</strong></a></li>
+        </ul>
+
+    </nav>
+
+    <section class="s"></section>
+
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="/submit_contact_info" method="post" id="contact-form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Explore By<span>Travelling</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a> |
+                <a href="#">About Us</a> |
+                <a href="#">Contact Us</a> |
+                <a href="#">Book Now</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2023<strong>Explore By Travelling</strong> All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <img src="icons8-location-94.png" alt="Location">
+                <p><span>Kosove</span>Prishtine</p>
+            </div>
+            <div>
+                <img src="icons8-phone-94.png" alt="Phone">
+                <p>+383 49 454 711</p>
+            </div>
+            <div>
+                <img src="icons8-gmail-94.png" alt="Email">
+                <p><a href="mailto:expbytravelling@gmail.com">expbytravelling@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Explore By Travelling</strong> is a travel agency where you can find the best deals out there
+            </p>
+            <div class="footer-icons">
+                <a href="#"><img src="icons8-facebook-94.png" width="35" height="35"></a>
+                <a href="#"><img src="icons8-twitter-circled-94.png" width="35" height="35"alt=""></a>
+                <a href="#"><img src="icons8-instagram-94.png"width="35" height="35" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+    var isValid = true;
+    var inputs = this.getElementsByTagName('input');
+    var textarea = this.getElementsByTagName('textarea')[0];
+
+    for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].value === '') {
+            isValid = false;
+            break;
+        }
+    }
+
+    if (textarea.value === '') {
+        isValid = false;
+    }
+
+    if (!isValid) {
+        alert('Please fill out all fields.');
+        event.preventDefault();
+    }
+});
+    </script>
+    
+</body>
+</html>
