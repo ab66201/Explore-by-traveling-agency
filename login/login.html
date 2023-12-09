@@ -3,74 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="path/to/fontawesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <title>Login</title>
-</head>
+    <title>LogIn and SignUp Page</title>
+    <link rel="stylesheet" href="login.css">
+    
+    
 <body>
 
-    <div class="form login_form">
-        <form action="#">
-            <h2>Login</h2>
+    <nav>
+        <div class="logo">ExploreByTravelling</div>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Booking</a></li>
+            <li> <a href="#">Contact Us</a></li>
+            <li> <a href="#"><strong>Log In</strong></a></li>
+            <li> <a href="#"><strong>Register</strong></a></li>
+        </ul>
 
-            <div class="input_box">
-                <input type="email" placeholder="Enter your email">
-                <i class="uil uil-envelope-alt email"></i>
+    </nav>
+    <div class="box">
+
+        <img src="icon.png">
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="loginform.html">login</a>
+                <a id="signup" href="register.html">signup</a>
             </div>
-            <div class="input_box">
-                <input type="password" placeholder="Enter your password">
-                <i class="uil uil-lock password"></i>
-                <i class="uil uil-eye-slash pw_hide"></i>
+            <div id="errorMsg"></div>
+            <div class="content">
+                <form class="login" name="loginForm" onsubmit="return validateLoginForm()" method="POST">
+                    <input type="text" name="name" id="logName" placeholder="Username">
+                    <input type="password" name="password" id="logPassword" placeholder="Password">
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Login">
+                    <a href="#">Forgot Password?</a>
+                </form>
 
             </div>
-        </form>
-
-    </div>
-  <!-- <div class="container">
-        <div class="header">
-            <h1>Login</h1>
-        </div>
-        <div class="main">
-            <form>
-                <span>
-                    <label>Username:</label>
-                    <i class="fa fa-user"></i>
-                    <input type="text" placeholder="Username" name="">
-                    <div class="error-message" id="UsernameError"></div>
-                </span><br>
-                <span>
-                    <label>Password:</label>
-                    <i class="fa fa-lock"></i>
-                    <input type="password" placeholder="Password" name="">
-                    <div class="error-message" id="PasswordError"></div>
-                </span><br>
-                <button type="button" onclick="validateForm()">Submit</button>
-            </form>
         </div>
     </div>
+
+   
     <script>
-        let emailRegex = /[a-zA-Z.-_]+@+[a-z]+\.+[a-z]{2,3}$/;
+        
 
-        function validateForm(){
-        let nameInput = document.getElementById('name');
-        let nameError = document.getElementById('nameError');
-        let emailInput = document.getElementById('email');
-        let emailError = document.getElementById('emailError');
+    let passwordRegex = /^[A-Z][a-zA-Z0-9!@#$%^&*()_+[\]{}|;:',.<>?]{7,}$/;
 
-        nameError.innerText = '';
-        emailError.innerText = '';
+    function validateLoginForm() {
+    var name = document.getElementById("logName").value;
+    var password = document.getElementById("logPassword").value;
 
-        if(!nameRegex.test(nameInput.value)){
-            nameError.innerText = 'invalid name';
-            return;
-        }
-        if(!emailRegex.test(emailInput.value)){
-            emailError.innerText = 'invalid email';
-            return;
-        }
-
-        alert('form submitted succesfully!');
+    if (name == "" || password == "") {
+		document.getElementById("errorMsg").innerHTML = "Please fill the required fields"
+		return false;
+	}
+    else if (!passwordRegex.test(password)) {
+        document.getElementById("errorMsg").innerHTML = "Your password must include at least 8 characters and meet the criteria.";
+        return false;
+    } else {
+        alert("Successfully logged in");
+        return true;
     }
-    </script>--> 
+}
+
+    </script>
 </body>
-</html>
