@@ -24,7 +24,7 @@ nav .logo {
     padding: 22px 20px;
     height: 80px;
     float: left;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .box img{
-	width:90px;
+	width:87px;
     margin-top:-50px ;
 }
 
