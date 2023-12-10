@@ -8,12 +8,13 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial;
-   
+    line-height: 1.6;
+    background-color: #94959b;
+    color: #333;
     
 }
-
-nav{
-    position: fixed;
+nav {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,6 +23,7 @@ nav{
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.6);
     border-bottom: 1px solid #fff;
+    z-index: 999;
 }
 
 nav .logo {
@@ -52,18 +54,27 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background: rgba(0, 0, 0, 7);
     border-radius: 6px;
 }
+.back-video{
+    width: 100%;
+    z-index: -1;
+    margin-top: -50px;
+  
+}
 
 .packages{
+    border-radius: 10px;
+    background-color: #94959b;
     padding: 100px 8% 100px;
 }
 .packages .main-txt{
     text-align: center;
 }
 .packages .main-txt h3{
+ 
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 600;
@@ -84,6 +95,7 @@ nav ul li a:hover{
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 .packages .row img{
     width: 100%;
@@ -93,6 +105,7 @@ nav ul li a:hover{
 }
 .packages .card-body{
     padding: 10px;
+    background-color: #d4ca8c81;
 }
 .packages .card-body h3{
     margin-top: 10px;
@@ -159,6 +172,7 @@ nav ul li a:hover{
   }
 .Map{
     width: 100%;
+    background-color: #7f808a;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -166,7 +180,7 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .maps{
-    color: #333;
+    color: white;
     margin-bottom: 60px;
 }
 iframe{
@@ -175,7 +189,21 @@ iframe{
     filter: invert(100%);
 }
 
-.footer-distributed{
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height: 800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
     background-color: #2d2a30;
     box-sizing: border-box;
     width: 100%;
@@ -185,7 +213,9 @@ iframe{
     margin-top: 80px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
@@ -199,7 +229,6 @@ iframe{
     font: normal 36px 'Cookie', cursive;
     margin: 0;
 }
-
 
 .footer-distributed h3 span {
     color: violet;
@@ -228,22 +257,16 @@ iframe{
     width: 35%;
 }
 
-.footer-distributed .footer-center i {
-    background-color: #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
+.footer-distributed .footer-center div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
-    font-size: 17px;
-    line-height: 38px;
+.footer-distributed .footer-center img {
+    margin-right: 10px;
+    width: 25px; 
+    height: 25px; 
 }
 
 .footer-distributed .footer-center p {
@@ -263,7 +286,6 @@ iframe{
 .footer-distributed .footer-center p a {
     color: violet;
     text-decoration: none;
-    ;
 }
 
 .footer-distributed .footer-right {
@@ -314,7 +336,9 @@ iframe{
 }
 
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
@@ -323,6 +347,5 @@ iframe{
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}    
-
+}
 
