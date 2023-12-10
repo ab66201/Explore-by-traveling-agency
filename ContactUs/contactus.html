@@ -42,10 +42,10 @@
         <div class="footer-left">
             <h3>Explore By<span>Travelling</span></h3>
             <p class="footer-links">
-                <a href="#">Home</a> |
-                <a href="#">About Us</a> |
-                <a href="#">Contact Us</a> |
-                <a href="#">Book Now</a>
+                <a href="../HomePage/homepage.html">Home</a> 
+                <a href="../AboutUs/aboutUs.html">About Us</a> 
+                <a href="../ContactUs/contactus.html">Contact Us</a> 
+                <a href="../booking/booking.html">Book Now</a>
             </p>
             <p class="footer-company-name">Copyright © 2023<strong>Explore By Travelling</strong> All rights reserved</p>
         </div>
@@ -77,27 +77,27 @@
     </footer>
 
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-    var isValid = true;
-    var inputs = this.getElementsByTagName('input');
-    var textarea = this.getElementsByTagName('textarea')[0];
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+            var isValid = true;
+            var inputs = this.getElementsByTagName('input');
+            var textarea = this.getElementsByTagName('textarea')[0];
 
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].value === '') {
-            isValid = false;
-            break;
-        }
-    }
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value === '') {
+                    isValid = false;
+                    break;
+                }
+            }
 
-    if (textarea.value === '') {
-        isValid = false;
-    }
+            if (textarea.value === '') {
+                isValid = false;
+            }
 
-    if (!isValid) {
-        alert('Please fill out all fields.');
-        event.preventDefault();
-    }
-});
+            if (!isValid) {
+                alert('Please fill out all fields.');
+                event.preventDefault();
+            }
+        });
     </script>
     
 </body>

@@ -267,6 +267,7 @@ span.next:hover, span.prev:hover{
     opacity: 0.8;
     color: #222;
 }
+
 .dotsContainer{
     position: absolute;
     bottom: 5px;

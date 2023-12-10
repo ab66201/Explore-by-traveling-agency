@@ -198,10 +198,10 @@
         <div class="footer-left">
             <h3>Explore By<span>Travelling</span></h3>
             <p class="footer-links">
-                <a href="#">Home</a> |
-                <a href="#">About Us</a> |
-                <a href="#">Contact Us</a> |
-                <a href="#">Book Now</a>
+                <a href="../HomePage/homepage.html">Home</a> 
+                <a href="../AboutUs/aboutUs.html">About Us</a> 
+                <a href="../ContactUs/contactus.html">Contact Us</a> 
+                <a href="../booking/booking.html">Book Now</a>
             </p>
             <p class="footer-company-name">Copyright © 2023<strong>Explore By Travelling</strong> All rights reserved</p>
         </div>
@@ -233,83 +233,77 @@
     </footer>
 
     <script type="text/javascript">
-        let slideImages = document.querySelectorAll('img');
+
+
+        let slideImages = document.querySelectorAll('.slides img');
         let next = document.querySelector('.next');
         let prev = document.querySelector('.prev');
         let dots = document.querySelectorAll('.dot');
 
-        var counter =0;
-        var counter =0;
+        var counter = 0;
         let deleteInterval;
 
         next.addEventListener('click', slideNext);
-        function slideNext(){
-        slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-        if(counter>=slideImages.length-1){
-            counter=0;
-        }
-        else{
-            counter++;
-        }
-        slideImages[counter].style.animation = 'next2  0.5s ease-in forwards';
-        indicators();
+        function slideNext() {
+            slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+            if (counter >= slideImages.length - 1) {
+                counter = 0;
+            } else {
+                counter++;
+            }
+            slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+            indicators();
         }
 
         prev.addEventListener('click', slidePrev);
-        function slidePrev(){
-        slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-        if(counter==0){
-            counter=slideImages.length-1;
-        }
-        else{
-            counter--;
-        }
-        slideImages[counter].style.animation = 'prev2  0.5s ease-in forwards';
-        indicators();
+        function slidePrev() {
+            slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+            if (counter == 0) {
+                counter = slideImages.length - 1;
+            } else {
+                counter--;
+            }
+            slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+            indicators();
         }
 
-        function autoSliding(){
-            deletInterval = setInterval(timer,3000);
-            function timer(){
+        function autoSliding() {
+            deleteInterval = setInterval(timer, 3000);
+            function timer() {
                 slideNext();
                 indicators();
             }
         }
         autoSliding();
 
-        const container= document.querySelector('.slide-container');
-        container.addEventListener('mouseover',function(){
-            clearInterval(deletInterval);
+        const container = document.querySelector('.slide-container');
+        container.addEventListener('mouseover', function () {
+            clearInterval(deleteInterval);
         });
 
-        container.addEventListener('mouseout',autoSliding);
+        container.addEventListener('mouseout', autoSliding);
 
-        
-        function indicators(){
-           for(i=0;i<dots.length; i++){
-                dots[i].className = dots[i].className.replace(' active' , '');
+
+            function indicators() {
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
             }
-            dots[counter].className+= 'active';
-        }
-        
+            dots[counter].classList.add('active');
+         }
 
-        function switchImage(currentImage){
+        function switchImage(currentImage) {
             currentImage.classList.add('active');
-           
             var imageId = currentImage.getAttribute('attr');
-            if(imageId>counter){
-                slideImages[counter].style.animation = 'next1  0.5s ease-in forwards';
+            if (imageId > counter) {
+                slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
                 counter = imageId;
-                slideImages[counter].style.animation = 'next2  0.5s ease-in forwards';
-            }
-            else if(imageId == counter){
+                slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+            } else if (imageId == counter) {
                 return;
-            }
-            else{
-                slideImages[counter].style.animation = 'prev1  0.5s ease-in forwards';
+            } else {
+                slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
                 counter = imageId;
-                slideImages[counter].style.animation = 'prev2  0.5s ease-in forwards';
-
+                slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
             }
             indicators();
         }
