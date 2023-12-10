@@ -98,6 +98,9 @@ nav ul li a:hover {
     
 }
 .packages .row img{
+    
+ 
+    height: auto;
     width: 100%;
     border-radius: 15px;
     padding: 10px;
