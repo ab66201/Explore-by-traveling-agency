@@ -217,7 +217,7 @@ section .heading .title{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ede6d6;
+    background-color: #f0eded;
 }
 .slide-container{
     position: relative;
